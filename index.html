@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>水浒英雄卡收集册星云链DAPP</title>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/amazeui.min.css">
+    <link rel="stylesheet" href="css/petshow.css?6">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+    <script type="text/javascript" src="./dist/nebulas.js"></script>
+    <script type="text/javascript" src="./dist/nebPay.js"></script>
+    <script src="js/amazeui.min.js"></script>
+    <script src="js/countUp.min.js"></script>
+    <script src="js/amazeui.lazyload.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="js/index.js"></script>
+
+</head>
+<body>
+
+<div class="get">
+    <div class="am-g">
+        <div class="am-u-lg-12">
+            <div class="set-size-button">
+                <button id="setSize">设置英雄个数</button>
+            </div>
+            <div class="get-title">
+                <div class="get_font_left"><h1>当前已经有</h1></div>
+                <div class="get_font_center" id="banner_num"></div>
+                <div class="get_font_rigth"><h1>位水浒英雄等您来领取</h1></div>
+            </div>
+
+            <div class="font_line"><h1>收集水浒英雄，重回儿时梦想</h1></div>
+
+            <div class="icon-xingyun-wrapper">
+                <div class="icon-xingyun">
+                        <span>
+                            <img src="./img/icon-xingyun1.png">
+                        </span>
+                </div>
+                <div class="noExtension" id="noExtension">
+                                友情提示：使用前请确保已经安装<a target="_blank" href="https://github.com/ChengOrangeJu/WebExtensionWallet">星云链钱包</a> 喔~
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="am-g am-imglist">
+    <ul data-am-widget="gallery" class="am-gallery am-avg-sm-2
+  am-avg-md-3 am-avg-lg-6 am-gallery-default">
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/1.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="001 天魁星及时雨宋江" 
+                         data-content="宋江，字公明，他面黑身矮，忠义双全，常替落魄江湖之人排忧解难，人唤“及时雨”。原为山东郓城县押司。晁盖、吴用等劫了生辰纲，被官府缉拿，幸得宋江事先告知。不料此事被宋江小妾阎婆惜发现，趁机要胁，宋江怒杀阎婆惜，犯下人命官司。后来宋江在浔阳楼酒醉题反诗，成了反贼，被迫上了梁山。晁盖死后，宋江做了梁山泊首领。他推行只反贪官，不反皇帝的招安路线。带领梁山好汉归顺了朝廷。征方腊后被封为楚州安抚使，终究还是被奸臣用毒酒毒死。"/>
+                </a>
+                <div class="am_listimg_info">                    
+                    <span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span>
+                </div>
+            </div>
+            <div id="0">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！</span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/2.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="002 天罡星玉麒麟卢俊义" 
+                         data-content="北京大名府的富豪，身高九尺，仪表不凡。一身好武艺，棍棒天下无对。由于名气大，被宋江看中，于是吴用装扮成算命先生将他骗到梁山，卢俊义不愿落草。回到北京，妻子贾氏却与管家李固私通。卢俊义被诬陷私通贼人，下了死牢。梁山三打大名府，救出卢俊义。后来他在曾头市活捉史文恭，为晁盖报仇。征方腊后被封为庐州安抚使，后被奸臣用水银毒伤，不能骑马，乘船时册立不牢，落水而死."/>
+                </a>
+                <div class="am_listimg_info">
+                    <span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="1">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/3.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="003 天机星智多星吴用" 
+                         data-content="原是乡村教书先生，道号“加亮”，字学究。平生机巧聪明，曾读万卷经书 《水浒传》吴用。吴用为晁盖献计，智取生辰纲后，上了梁山。三打祝家庄时，吴用献连环计破敌。大破连环马时，吴用派时迁盗甲骗徐宁上山。宋江闹华州时，吴用出计借用宿太尉金铃吊挂，救出了史进、鲁智深。一生屡出奇谋，屡建战功，为宋江心腹。征方腊后被封为武胜军承宣使。宋江遇害后，他在宋江坟前自缢。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="2">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/4.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="004 天闲星入云龙公孙胜" 
+                         data-content="河北蓟州人。公孙胜早先和晁盖等劫了生辰纲，后来离开梁山。梁山人马攻打高唐州时，高廉善妖法，宋江一筹莫展。吴用让宋江请公孙胜出山。公孙胜是二仙山罗真人弟子，道号“一清”。他与高廉斗法，大破高唐州。梁山好汉闹华州后凯旋，路过芒砀山，被会法术的樊瑞、项充、李衮拦阻。公孙胜作法破了三人，劝他们归顺梁山。在梁山泊英雄排名次时排行第四，封为掌管机密副军师。宋江受招安后公孙胜回蓟州修道，未参与征方腊。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="3">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/5.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="005 天勇星大刀关胜" 
+                         data-content="三国名将关羽的后代，使一把青龙偃月刀。原来是蒲东巡检使，后被蔡太师调往梁山泊攻打宋江后方。宋江十分喜爱关胜出自名门，且将才难得。呼延灼用诈降计诱关胜进入宋江的大寨，被挠挂钩拖下马鞍活捉。关胜感宋江忠义，便归顺了梁山。梁山好汉第五，马军五虎将第一。征方腊后做了大名府正兵马总管。后因酒醉落马病故。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="4">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/6.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="006 天雄星豹子头林冲" 
+                         data-content="原是东京八十万禁军枪棒教头。豹头环眼，枪法精妙。他的妻子被高衙内调戏，自己被高俅陷害误入白虎节堂。在发配沧州时，幸亏结义兄弟鲁智深在野猪林搭救而逃过一劫。在沧州牢城看守草料场时，又遭高俅心腹陆谦放火暗算。林冲格杀陆谦，雪夜上梁山。晁盖等上梁山后，头领王伦不容这些英雄，林冲火并王伦，把晁盖推上了梁山泊首领之位。征方腊后，林冲中风，留在杭州六和寺养病，由武松照顾，半年后病故。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="5">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/7.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="007 天猛星霹雳火秦明" 
+                         data-content="秦明，青州兵马统制，使一条狼牙棒，有万夫不当之勇，在梁山泊英雄中排第七，马军五虎将第三。秦明性情急躁，声如巨雷，外号“霹雳火”。他常当先出阵，屡立战功。征方腊时遭暗算，被方杰所杀，梁山人马尽皆失色。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="6">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/8.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="008 天威星双鞭呼延灼" 
+                         data-content="呼延灼，北宋名将呼延赞之后，梁山泊第八条好汉，马军五虎将第四。汝宁郡都统制，使两条钢鞭，骑一匹御赐的踢雪乌骓马，祖传连环甲马阵，有万夫不当之勇。曾用连环马让梁山军马吃尽苦头，后被钩镰枪所破。他又攻打三山，使三山好汉共上梁山。征方腊后被封为御营兵马指挥使。率军抗金，杀至淮西阵亡。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="7">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/9.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="009 天英星小李广花荣" 
+                         data-content="花荣，梁山泊英雄中排行第九，马军八虎骑兼先锋使第一员。原是清风寨副知寨，一双俊目，齿白唇红，眉飞入鬓，细腰宽膀的美将军。使一杆银枪，神臂善射，百步穿杨。与宋江是知己，为救宋江大闹清风寨，投奔梁山。宋江遇害后，他在宋江坟前自缢。
+                         "/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="8">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/10.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="010 天贵星小旋风柴进" 
+                         data-content="柴进，在梁山泊英雄中排行第十，大周皇帝柴世宗的后代，宋太祖赐其家人丹书铁券。龙眉凤目，皓齿朱唇。仗义疏财，爱结交江湖好汉。征方腊时，化名柯引，潜入方腊内部，娶了金芝公主，与梁山人马里应外合。后辞官回沧州为民，无疾而终。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="9">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/11.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="011 天富星扑天雕李应" 
+                         data-content="李应，梁山泊第十一位好汉，同柴进一起掌管钱粮财物。李应原是李家庄庄主，人称“扑天雕”，使一条浑铁点钢枪，背后藏有五口飞刀 ，神出鬼没，能够百步以内伤人。后被宋江用计骗上梁山。征方腊后回到家乡做了富豪。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="10">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/12.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="012 天满星美髯公朱仝" 
+                         data-content="梁山好汉第十二名，马军八虎骑兼先锋使第六名。原是郓城县马兵都头，富户出生，有一部美须髯。后因私放雷横，被发配沧州。知府见他有关公风采，便让他照看小衙内。不想李逵砍死小衙内，断了朱仝归路，被迫上了梁山。征方腊后，被封为保定府都统制。后随刘光世破金，一直做到太平军节度使。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="11">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/13.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="013 天孤星花和尚鲁智深" 
+                         data-content="鲁智深，梁山泊第十三位好汉，十员步军头领第一名。鲁智深原名鲁达，小种经略府提辖，见郑屠欺侮金翠莲父女，三拳打死了这“镇关西”。逃到五台山削发为僧，改名鲁智深。曾倒拔垂杨柳，大闹桃花村，火烧瓦罐寺，单打二龙山。一生锄强扶弱，善终坐化于大刹。加赠义烈照暨禅师。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="12">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/14.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="014 天伤星行者武松" 
+                         data-content="清河县人。在景阳冈上醉打猛虎而名震天下，做了阳谷县步兵都头。后来怒杀西门庆、潘金莲，为兄长武大郎报仇。武松是家喻户晓的英雄，曾醉打蒋门神，大闹飞云浦，血溅鸳鸯楼，夜走蜈蚣岭。征方腊时被天师包道乙砍去一臂。后来在杭州六和寺出家，被封为清忠祖师，活到了八十岁。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="13">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/15.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="015 天立星双枪将董平" 
+                         data-content="董平，梁山泊第十五条好汉，马军五虎将第五名。董平原是东平府兵马都督，心灵机巧，风流倜傥，使两枝铁枪，打仗时横冲直撞，勇猛无敌。宋江攻打东平府，用计活捉了董平。征方腊时董平在独松关战死。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="14">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/16.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="016 天捷星没羽箭张清" 
+                         data-content="张清，梁山泊十六条好汉，马军八虎骑兼先锋使第五名。宋江攻打东昌府，东昌府虎骑张清，善用飞石打人，百发百中，人称“没羽箭”，曾连打梁山一十五将。后娶女将琼英为妻，征方腊时战死于独松关，有一遗腹子张节。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="15">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/17.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="017 天暗星青面兽杨志" 
+                         data-content="杨志，北宋名将杨业之后。他中过武举，想建功立业，重振祖上威名，无奈命运弄人，先失花石纲，沦落东京街头卖祖传宝刀，后来又失生辰纲，在梁山好汉中排名第十七位，梁山军马里做马军八虎骑兼先锋使，排行第三。征方腊时病故于丹徒。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="16">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/18.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="018 天佑星金枪手徐宁" 
+                         data-content="徐宁，梁山第十八条好汉，马军八虎骑兼先锋使第二。徐宁原来是京师金枪班教头，会钩镰枪法。后被吴用设计骗上山，破了呼延灼的连环马。征方腊时脖子上中了毒箭，由于“神医”安道全没有出征，后来毒发身亡。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="17">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/19.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="019 天空星急先锋索超" 
+                         data-content="索超，梁山第十九条好汉，排马军八虎骑兼先锋使第四。索超是北京名将，使一柄开山斧，作战时总是一马当先。后来梁山攻打大名府，索超落入陷坑被擒，归顺梁山。征方腊时急于追敌，被石宝回身用流星锤打死。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="18">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+        <li>
+            <div class="am-gallery-item am_list_block">
+                <a href="###" class="am_img_bg">
+                    <img class="am_img animated" src="img/loading.gif"
+                         data-original="img2/20.jpg"
+                         alt="远方 有一个地方 那里种有我们的梦想"
+                         data-toggle="popover" 
+                         title="020 天速星神行太保戴宗" 
+                         data-content="戴宗原是江州两院节级。练就神行法，能日行八百里，人称“神行太保”。宋江在浔阳楼写下反诗，蔡九令戴宗前去捉拿宋江，戴宗因帮助宋江也被牵连。梁山好汉大闹江州将他与宋江救上山，负责机密情报。征方腊后，戴宗到泰安岳庙陪堂，了此一生。"/>
+                </a>
+
+                <div class="am_listimg_info"><span class="am-icon-heart"> 132</span><span
+                        class="am-icon-comments"> 67</span><span class="am_imglist_time">15分钟前</span></div>
+
+            </div>
+            <div id="19">
+                <button class="get-button btn btn-primary">领取</button>
+                <button type="button" class="send-button btn btn-danger">赠送</button>
+            </div>
+            <a class="am_imglist_user"><span class="am_imglist_user_ico"> Owner：</span><span
+                    class="  am_imglist_user_font2">该英雄暂无主人，赶紧来领取吧！ </span></a>
+        </li>
+
+    </ul>
+</div>
+<footer class="am_footer">
+    <div class="am_footer_con">
+        <div class="am_footer_link">
+            <span>关于我们</span>
+            <dd>same-flower工作小组是一个区块链应用开发兴趣小组，致力于开发出更多更优质的DAPP，欢迎大家提宝贵意见和建议，邮箱same4869@126.com</dd>
+        </div>
+
+
+        <div class="am_footer_don">
+            <span>收集说明</span>
+            <dl>
+                <dd>水浒风云变幻，猛将谁与争锋！还记得小时候买过的小浣熊与小当家吗，没错，在这里您又能重拾儿时梦想了。基于星云链，拥有区块链的所有优点，去中心化，无法篡改，可追溯性强。
+                    <br>在合约部署完成时所有卡片均无主人，这时候任何玩家可以获得这张卡片的拥有权，并且能被所有人看到，类似比特币交易，拥有卡片的人能够赠送给其他人，一张卡片只能有一个拥有者。
+                    <br>合约支持英雄不断更新，赠送与索要功能将持续完善，敬请期待。
+                </dd>
+            </dl>
+        </div>
+
+    </div>
+    <div class="am_info_line">Copyright(c)2018 <span>same-flower</span> All Rights Reserved.</div>
+</footer>
+<script src="js/petshow.js"></script>
+</body>
+</html>
